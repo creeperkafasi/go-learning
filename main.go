@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -46,7 +46,7 @@ func main() {
 		case 'A' | 'a':
 			fmt.Print("Task Text: ")
 			var taskText string
-			if scanner.Scan(){
+			if scanner.Scan() {
 				taskText = scanner.Text()
 			}
 			tasks = append(tasks, Task{Completed: false, Text: taskText})
@@ -120,4 +120,3 @@ func main() {
 
 	}
 }
-
